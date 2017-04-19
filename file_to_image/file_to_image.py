@@ -16,9 +16,10 @@ x,y,rgb=c3[:,0], c3[:,1], c3[:,2:5]
 rgb3=np.true_divide(rgb,256)
 
 fig, ax = plt.subplots()
-fig.canvas.set_window_title(fpath.replace("/","_").replace("\\","-").replace(":","="))
+image_name = fpath.replace("/","_").replace("\\","-").replace(":","=").replace(".","!")
+fig.canvas.set_window_title(image_name)
 plt.title(fpath)
 ax.scatter(x, y, s=0.1, facecolors=rgb3, alpha=0.6)
-plt.show()
-
+# plt.show()
+plt.savefig("./images/%s"%image_name,dpi=200)
 
