@@ -6,9 +6,10 @@ import sys
 
 # dt=np.dtype([('r', int), ('g', int),('b', int)])
 # fpath = "D:/program/x86/KingRoot/adb.exe"
-# fpath = "D:\TDDownload\赤道与北极.mp3"
-print("me.py file_path. eg: me.py D:/program/x86/KingRoot/adb.exe")
+
+# print("me.py file_path. eg: me.py D:/program/x86/KingRoot/adb.exe")
 fpath = sys.argv[1]
+print("process:%s"%fpath)
 c=np.fromfile(fpath,dtype=np.uint8)
 c=np.resize(c,int(len(c)/5)*5)
 c3=np.reshape(c,( -1,5))
