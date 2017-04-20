@@ -25,6 +25,14 @@ cd D:\tt\TeamViewer_work
 junction images D:\agui\Documents\research\file_to_image\img\TeamViewer-at-ms-windows\images
 get-childitem "D:\program\x86\TeamViewer"  | foreach {python D:\agui\Documents\research\file_to_image\file_to_image.py $_.fullname}
 
+cd D:\tt\TeamViewer-work-3d
+junction images3d D:\agui\Documents\research\file_to_image\img\TeamViewer-at-ms-windows\images3d
+get-childitem -recurse  "D:\program\x86\TeamViewer"  | Sort-Object -Property length  | where { ! $_.PSIsContainer } | foreach {python D:\agui\Documents\research\file_to_image\file_to_image3d.py $_.fullname}
+
+cd D:\tt\TeamViewer-work-3d
+junction images3d D:\agui\Documents\research\file_to_image\img\TeamViewer-at-ms-windows\images3d
+get-childitem -recurse  "D:\program\x86\TeamViewer"  | Sort-Object -Property length | where { ! $_.PSIsContainer } | foreach {python D:\agui\Documents\research\file_to_image\file_to_image3d_zcount.py $_.fullname}
+
 cd D:\tt\xshell-work
 junction images D:\agui\Documents\research\file_to_image\img\xshell-at-ms-windows\images
 get-childitem "D:\program\x86\NetSarang\Xshell 5"  | foreach {python D:\agui\Documents\research\file_to_image\file_to_image.py $_.fullname}
@@ -32,6 +40,10 @@ get-childitem "D:\program\x86\NetSarang\Xshell 5"  | foreach {python D:\agui\Doc
 cd D:\tt\jdk8-work
 junction images D:\agui\Documents\research\file_to_image\img\jdk8-at-ms-windows\images
 get-childitem "D:\program\x64\Java\jdk1.8.0_111\bin"  | foreach {python D:\agui\Documents\research\file_to_image\file_to_image.py $_.fullname}
+
+cd D:\tt\jdk8-work
+junction images3d D:\agui\Documents\research\file_to_image\img\jdk8-at-ms-windows\images3d
+get-childitem "D:\program\x64\Java\jdk1.8.0_111\"  | Sort-Object -Property length | foreach {python D:\agui\Documents\research\file_to_image\file_to_image3d_zcount.py $_.fullname}
 
 cd D:\tt\jdk8-work
 junction images D:\agui\Documents\research\file_to_image\img\jdk8-at-ms-windows\images
