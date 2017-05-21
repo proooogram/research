@@ -1,0 +1,1 @@
+init code is copy from https://git.oschina.net/beiyan/mvc-config.git
