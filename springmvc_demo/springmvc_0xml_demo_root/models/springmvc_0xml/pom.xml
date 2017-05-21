@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.beiyan</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>org.proooogram</groupId>
+	<artifactId>springmvc_0xml</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>demo Maven Webapp</name>
+	<version>0.0</version>
+	<name>springmvc_0xml_name</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
