@@ -1,0 +1,8 @@
+jdbctemplate:
+	spring fullAnnotation noXML OkMysql
+	dao service
+	webservice
+	
+springboot:
+	spring fullAnnotation noXML OkMysql
+	

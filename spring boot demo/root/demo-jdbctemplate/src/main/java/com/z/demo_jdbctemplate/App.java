@@ -5,8 +5,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.AbstractApplicationContext;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by agui on 2017/6/16.
@@ -19,11 +17,4 @@ public class App {
         int debug = 0;
     }
 
-    public static List getBeans(AbstractApplicationContext context){
-        List<Object> ls = new ArrayList();
-        for(String n:context.getBeanDefinitionNames()){
-            ls.add(context.getBean(n));
-        }
-        return ls;
-    }
 }

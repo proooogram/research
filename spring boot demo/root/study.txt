@@ -1,0 +1,2 @@
+spring repository 和 dao 是类似的层次
+google key words: spring repository vs dao
