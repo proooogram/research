@@ -1,0 +1,1 @@
+insert into user set username='u0',password='p0'
