@@ -1,13 +1,27 @@
 package com.z.model;
 
+import java.io.Serializable;
+
 /**
  * Created by agui on 2017/6/20.
  */
-public class User {
+public class User implements Serializable{
+    //model serialVersionUID 设定为固定值 否则类一改变 此指变了 导致旧有的已经存储在redis中的binary中的serialVersionUID和现在class中的不匹配 而序列化（载入）失败
+    private static final long serialVersionUID = -1L;
     private Integer id;
     private String username;
     private String password;
     private String email;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
     public User(){}
 
