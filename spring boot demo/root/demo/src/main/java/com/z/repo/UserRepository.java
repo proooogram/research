@@ -32,7 +32,7 @@ public class UserRepository {
                 new Object[userId], new UserRowMapper());
     }
 
-    @Transactional()
+//    @Transactional()
 }
 
 class UserRowMapper implements RowMapper<User> {
